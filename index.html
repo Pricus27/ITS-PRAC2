@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ITS MCQ Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" style="margin-top: 100px;">
+    <header class="app-header">
+      <h1>ITS MCQ Practice</h1>
+      <p>Load your `ITS-Questions.txt` file and start practicing.</p>
+    </header>
+
+    <section class="loader">
+      <label class="file-label">
+        <span>Select questions file (.txt)</span>
+        <input type="file" id="fileInput" accept=".txt" />
+      </label>
+      <div id="loadStatus" class="status"></div>
+    </section>
+
+    <main class="quiz" id="quizArea" hidden>
+      <div class="quiz-header">
+        <div id="questionCounter"></div>
+        <button id="resetBtn" class="secondary-btn">Load another file</button>
+      </div>
+
+      <div id="questionText" class="question-text"></div>
+      <form id="optionsForm" class="options"></form>
+
+      <div class="quiz-footer">
+        <button id="prevBtn" class="secondary-btn">Previous</button>
+        <button id="nextBtn" class="primary-btn">Next</button>
+        <button id="submitBtn" class="primary-btn">Submit Quiz</button>
+      </div>
+
+      <div id="feedback" class="feedback"></div>
+      <div id="score" class="score"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

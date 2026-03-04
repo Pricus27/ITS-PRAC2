@@ -1,0 +1,1424 @@
+Database Management MCQ - Batch 1 (Q1 - Q30)
+---------------------------------------------------------
+
+01. JDBC API 2.0 defines five levels of transaction isolation for database concurrency control. Which of the following is the lowest level of transaction isolation?
+A) TRANSACTION_READ_COMMITTED
+B) TRANSACTION_NONE
+C) TRANSACTION_SERIALIZABLE
+D) TRANSACTION_READ_UNCOMMITTED
+E) TRANSACTION_REPEATABLE_READ
+Correct Answer: B) TRANSACTION_NONE
+
+02. Which of the following statements about rebuilding an index is true?
+A) The NOLOGGING and ONLINE keywords can never be used together.
+B) The NOLOGGING and ONLINE keywords are always used together.
+C) Without the ONLINE keyword the index is locked for any DML operation.
+D) Without the ONLINE keyword the index is locked for the SELECT operation.
+Correct Answer: C) Without the ONLINE keyword the index is locked for any DML operation.
+
+03. This question requires that you evaluate the underlined text to determine if it is correct.
+The [UNION keyword] combines the results of two queries and returns only rows that appear in both result sets.
+A) INTERSECT
+B) JOIN
+C) No change is needed
+D) ALL
+Correct Answer: A) INTERSECT
+
+04. Which permission does a user need in order to run a stored procedure?
+A) RUN
+B) ALLOW
+C) EXECUTE
+D) CALL
+Correct Answer: C) EXECUTE
+
+05. Which keyword must be included in a create view statement?
+A) WHERE
+B) UPDATE
+C) ORDER BY
+D) SELECT
+Correct Answer: D) SELECT
+
+06. What statement is used to copy records from one table into an existing table?
+A) SELECT
+B) SELECT WITHIN
+C) SELECT INTO
+D) INSERT INTO .. SELECT
+Correct Answer: D) INSERT INTO .. SELECT
+
+07. You accept an IT internship at a local charity. The charity asks you to keep a record of its volunteers by using a database table named Volunteer. When volunteers ask to be removed from mailing lists, the table must be updated. You need to use a transaction to ensure that the database has data integrity and referential integrity. Which statement should you use?
+A) BEGIN TRANSACTION VolunteerDelete; DELETE FROM Volunteer WHERE Id = 13; COMMIT TRANSACTION VolunteerDelete;
+B) WHILE TRANSACTION VolunteerDelete; DELETE FROM Volunteer WHERE Id = 13; CATCH TRANSACTION VolunteerDelete;
+C) OPEN TRANSACTION VolunteerDelete; DELETE FROM Volunteer WHERE Id = 13; CLOSE TRANSACTION VolunteerDelete;
+D) UPDATE TRANSACTION VolunteerDelete; DELETE FROM Volunteer WHERE Id = 13; END TRANSACTION VolunteerDelete;
+Correct Answer: A) Option A (BEGIN TRANSACTION...)
+
+08. Which type of index changes the order in which the data is stored in a table?
+A) clustered
+B) non-clustered
+C) non-sequential
+D) sequential
+Correct Answer: A) clustered
+
+09. This question requires that you evaluate the underlined text to determine if it is correct.
+A [key] defines the amount of storage space that is allocated to a value in a column.
+A) validator
+B) data type
+C) No change is needed
+D) format
+Correct Answer: B) data type
+
+10. Which of the following statements is true about referential integrity?
+A) It checks that no component of a primary key can have a null value and no duplicate entries can exist.
+B) It distinguishes between null values and zero entries.
+C) It checks that no record in a child table can exist if its corresponding record is not available in the parent table.
+D) It checks that the value of a primary key must be consistent throughout the life of an instance.
+Correct Answer: C) It checks that no record in a child table can exist if its corresponding record is not available in the parent table.
+
+11. First normal form requires that a database excludes:
+A) Duplicate rows
+B) Repeating groups
+C) Composite keys
+D) Foreign keys
+Correct Answer: B) Repeating groups
+
+12. Consider the case of a distance education university. The university has many regional centers across the country. Each regional center has a head known as regional manager. Each regional center has allotted more than one study center in its region. Each regional center has a region code, which is unique and specifies a region. Each study center also has a study center code, which is also unique. What is the relationship between regional center and study center?
+A) There is no relationship.
+B) One-to-one
+C) One-to-many
+D) Many-to-many
+Correct Answer: C) One-to-many
+
+13. You are the database administrator of a MySQL server that runs on a Windows server. All clients are local clients. For security, you want to disable connections from the remote clients. Which of the following steps will you take to accomplish the task?
+A) Start the server with the --shared-memory option.
+B) Start the server with the --secure-auth option.
+C) Start the server with the --skip-networking option.
+D) Start the server with the --disable-networking option.
+Correct Answer: C) Start the server with the --skip-networking option.
+
+14. You work at a restaurant and they ask you to help them with a data issue. They provide you with recipe data (ID, RecipeName, PrimaryIngredient, Category). You need to normalize the data to third normal form. How many tables should you create?
+A) 1
+B) 3
+C) 2
+D) 4
+Correct Answer: B) 3
+
+15. You are the database administrator for a MySQL database. The database server is installed on a Unix system. The time zone files for the system are located at /usr/share/zoneinfo. You need to ensure that the system and MySQL time zones are based on the same information. Which of the following statements will you use to accomplish the task?
+A) shell> mysql_tz_to_sql /usr/share/zoneinfo | mysql -u root mysql
+B) shell> /usr/share/zoneinfo mysql_tzinfo_to_sql | mysql -u root mysql
+C) shell> /usr/share/zoneinfo mysql_tz_to_sql | mysql -u root mysql
+D) shell> mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
+Correct Answer: D) shell> mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
+
+16. What is not allowed in object names in SQL?
+A) special characters
+B) symbols
+C) spaces
+D) numbers
+Correct Answer: C) spaces
+
+17. You work as a Database Designer for DataOneWorld Inc. The company has a SQL Server database. You are assigned the task of creating a data model of an enterprise based on a specific data model. The model to be created should be independent of a particular DBMS. Which of the following database designs will help you accomplish the task?
+A) Application design
+B) Physical database design
+C) Logical database design
+D) Conceptual database design
+Correct Answer: C) Logical database design
+
+18. Which of the following are the main approaches in the database design? (Choose three.)
+A) Top-down approach
+B) Bottom-up approach
+C) Middle approach
+D) Inside-out approach
+Correct Answer: A) Top-down approach, B) Bottom-up approach, D) Inside-out approach
+
+19. This question requires that you evaluate the underlined text to determine if it is correct.
+You combine data from three tables into one table. The new table includes redundancy to optimize read performance. The data in the new table has been [denormalized].
+A) No change is needed
+B) Indexed
+C) Normalized
+D) Truncated
+Correct Answer: A) No change is needed
+
+20. You have a database table named SongInformation (Name, Singer, YearWritten, CDsSold). You need to create a SQL query to retrieve only the names of songs that sold more than 1000 compact discs. Which query should you use?
+A) SELECT Name FROM SongInformation WHERE CDsSold > 1000
+B) SELECT Name FROM CDsSold WHERE CDsSold > 1000
+C) SELECT * FROM SongInformation WHERE CDsSold > 1000
+D) SELECT * FROM SongInformation
+Correct Answer: A) Option A (SELECT Name FROM SongInformation...)
+
+21. You have two tables named Cars and Color related by ColorId. You run: SELECT * FROM Cars LEFT OUTER JOIN Colors ON Cars.ColorID = Colors.ColorID. How many rows does the SQL statement return?
+A) 0
+B) 3
+C) 6
+D) 2
+Correct Answer: B) 3
+
+22. In SQL, an insert statement is used to add a:
+A) Table to a database.
+B) Column to a table definition.
+C) User to a database.
+D) Row of data to a table.
+Correct Answer: D) Row of data to a table.
+
+23. Which statement best defines a syntax error?
+A) Causes tables to not appear correctly within a database
+B) Prevents a table from being created
+C) Prevents changes to a database from being completed
+D) Causes a statement not to run
+Correct Answer: D) Causes a statement not to run
+
+24. This question requires that you evaluate the underlined text to determine if it is correct.
+A relational database management system employs the concept of an attribute to ensure that data entered into a field in a column is valid.
+A) an index
+B) a constraint
+C) a primary key
+D) No change is needed
+Correct Answer: B) a constraint
+
+25. This question requires that you evaluate the underlined text to determine if it is correct.
+The [UNION] keyword combines the results of two queries and returns only rows that appear in both result sets.
+A) INTERSECT
+B) ALL
+C) JOIN
+D) No change is needed
+Correct Answer: A) INTERSECT
+
+26. Matching:
+- A clustered index sorts and stores the data columns... -> Yes
+- A non-clustered index is defined on a table or view... -> Yes
+- A unique index ensures that the index key contains no duplicate values... -> Yes
+- A filtered index is a clustered index that is optimized... -> No
+
+27. You have a table of products with fields for ProductID, Name, and Price. You need to write an UPDATE statement that sets the value in the InStock field to Yes for a specific ProductID. Which clause should you use in your update statement?
+A) WHERE
+B) THAT
+C) HAVING
+D) GROUP BY
+Correct Answer: A) WHERE
+
+28. You manage a database named Customers, which includes a table named Orders. The Orders table is frequently queried, but only orders with a sales total of more than $1000.00 are required in the query. You want to create an index to speed up these types of queries at the same time, ensuring the index is as small as possible. What type of index should you use?
+A) Clustered
+B) XML
+C) Filtered
+D) Non-clustered
+Correct Answer: C) Filtered
+
+29. This question requires that you evaluate the underlined text to determine if it is correct.
+[Views] are database objects that contain all of the data in a database.
+A) Stored procedures
+B) Tables
+C) No change is needed
+D) Queries
+Correct Answer: B) Tables
+
+30. At 3:00 P.M. you create a backup of your database. At 4:00 P.M. you create a table named Customer and import data into the table. At 5:00 P.M. your server fails. You run a script to apply only the 3:00 P.M. backup to your database. What is the result of the script?
+A) The script fails.
+B) The Customer data no longer exists.
+C) The Customer table no longer exists.
+D) The Customer table exists but has no data.
+Correct Answer: C) The Customer table no longer exists.
+
+Database Management MCQ - Batch 2 (Q31 - Q60)
+---------------------------------------------------------
+
+31. This question requires that you evaluate the underlined text to determine if it is correct.
+[Truncate] is a database term used to describe the process of applying a backup to a damaged or corrupt database.
+A) Attach
+B) No Change is needed
+C) Restore
+D) Commit
+Correct Answer: C) Restore
+
+32. You assign User1 a set of permissions that include the WITH GRANT OPTION. The WITH GRANT OPTION enables User1 to:
+A) view other users' permissions.
+B) create new database users.
+C) request a log of permission use.
+D) delegate permissions to other users.
+Correct Answer: D) delegate permissions to other users.
+
+33. You have a table named Employee that includes the following columns: EmployeeID, EmployeeName. Which statement should you use to return the number of rows in the table?
+A) SELECT * FROM Employee
+B) SELECT SUM(*) FROM Employee
+C) SELECT COUNT(rows) FROM Employee
+D) SELECT COUNT(*) FROM Employee
+Correct Answer: D) Option D
+
+34. You need to list the name and price of each product, sorted by price from highest to lowest. Which statement should you use?
+A) SELECT Name, Price FROM Product ORDER BY Price DESC
+B) SELECT Name, Price FROM Product ORDER BY Price ASC
+C) SELECT Name, BOTTOM Price FROM Product
+D) SELECT Name, TOP Price FROM Product
+Correct Answer: A) Option A
+
+35. You need to disable User1's access to view the data in the Customer table. Which statement should you use?
+A) REMOVE User1 FROM Customer
+B) REMOVE SELECT ON Customer FROM User1
+C) REVOKE SELECT ON Customer FROM User1
+D) REVOKE User1 FROM Customer
+Correct Answer: C) Option C
+
+36. Which of the following is a management activity that allows the stages of the database application to be realized as efficiently and effectively as possible?
+A) Identifying information for objects
+B) Object identification
+C) Database planning
+D) Requirements collection and analysis
+Correct Answer: C) Database planning
+
+37. Which statement creates a composite key?
+A) CREATE TABLE Order (OrderID INTEGER PRIMARY KEY, OrderItemID INTEGER PRIMARY KEY)
+B) CREATE TABLE Order (OrderID INTEGER, OrderItemID INTEGER, PRIMARY KEY OrderID, PRIMARY KEY OrderItemID)
+C) CREATE TABLE Order (OrderID INTEGER, OrderItemID INTEGER, PRIMARY KEY)
+D) CREATE TABLE Order (OrderID INTEGER, OrderItemID INTEGER, PRIMARY KEY (OrderID, OrderItemID))
+Correct Answer: D) Option D
+
+38. What keyword removes records from a table?
+A) REMOVE
+B) DROP
+C) CANCEL
+D) DELETE
+Correct Answer: D) DELETE
+
+39. This question requires that you evaluate the underlined text to determine if it is correct.
+Create a query that returns a set of table data by using the [UPDATE] statement.
+A) INSERT
+B) SELECT
+C) REPLACE
+D) No change is needed
+Correct Answer: B) SELECT
+
+40. ERROR 1251: The client does not support authentication protocol requested by the server; consider upgrading MySQL client. You do not want to upgrade any client or server right now, and want to enable all clients to connect to the new server successfully. Which of the following steps will you take to resolve the issue?
+A) Run the server with the --secure-auth option.
+B) Run the server with the --old-password option.
+C) Run the server with the --allow-old option.
+D) Run the server with the --enable-old option.
+Correct Answer: B) Run the server with the --old-password option.
+
+41. John wants to insert records in a table where the database is structured in a fixed format. Which of the following data models will he use to accomplish the task?
+A) Network data model
+B) Entity-Relationship Model
+C) Relational model
+D) Object relational data model
+Correct Answer: C) Relational model
+
+42. What is the difference between a DELETE statement and a TRUNCATE TABLE statement?
+A) One can identify specific records that are being deleted with a DELETE statement, while a TRUNCATE TABLE statement allows one to delete specific characters in a record
+B) One can identify specific records that are being deleted with a TRUNCATE TABLE statement, while a DELETE statement allows one to delete specific characters in a record
+C) One can identify specific records that are being deleted with a DELETE statement, while a TRUNCATE TABLE statement deletes all data in a table
+D) One can identify specific records that are being deleted with a TRUNCATE TABLE statement, while a DELETE statement deletes all data in a table
+Correct Answer: C) One can identify specific records that are being deleted with a DELETE statement, while a TRUNCATE TABLE statement deletes all data in a table
+
+43. You discover that there are several odd occurrences in the database (unauthorized activity). You are required to stop the unauthorized changes while having least impact on the stored procedures that are in use. Your explanation must use the least administrative effort. What should you do?
+A) The input parameters should be parsed to watch for and block any input including single quotes.
+B) The stored procedure should be customized to use type-specific and length-restricted parameters.
+C) All data handling activity on the table should be audited and recorded.
+D) The stored procedures used for the table should be replaced with ad hoc queries.
+Correct Answer: B) The stored procedure should be customized to use type-specific and length-restricted parameters.
+
+44. This question requires that you evaluate the underlined text to determine if it is correct.
+The [CREATE TABLE] command removes one or more table definitions and all data, indexes, triggers, constraints, and permission specifications for those tables.
+A) DROP TABLE
+B) TRUNCATE TABLE
+C) No change is needed
+D) ALTER TABLE
+Correct Answer: A) DROP TABLE
+
+[NOTE: Question 45 was skipped in the source material]
+
+46. Which command should you use to give a user permission to read the data in a table?
+A) GRANT SELECT
+B) ALLOW SELECT
+C) PERMIT READ
+D) LET READ
+Correct Answer: A) GRANT SELECT
+
+47. You want to ensure that anytime any data in the Employees table is modified with an UPDATE statement, they are recorded in a table named EmployeeChanges. What should you create to meet this need?
+A) A DDL trigger that queries the inserted table
+B) A DML trigger that queries the updated table
+C) A DML trigger that queries the inserted table
+D) A DDL trigger that queries the updated table
+Correct Answer: C) A DML trigger that queries the inserted table
+
+48. CREATE DATABASE '24342'. What will be the output of the query?
+A) A database will be created.
+B) An error will be generated stating that a database name should be a combination of numerals and alphabets.
+C) An error will be generated stating that a database name must begin with an alphabet and all the alphabets should be in uppercase.
+D) An error will be generated stating that a database name must begin with an alphabet.
+Correct Answer: A) A database will be created.
+
+49. You have two tables named Cars and Color. The two tables are related by ColorId. You run the following SQL statement: SELECT * FROM Cars LEFT OUTER JOIN Colors ON Cars.ColorID = Colors.ColorID. How many rows does the SQL statement return?
+A) 6
+B) 0
+C) 2
+D) 3
+Correct Answer: D) 3
+
+50. What must be included in parenthesis in an INSERT INTO .. VALUES statement?
+A) number of columns
+B) column types
+C) required fields
+D) null values
+Correct Answer: C) required fields
+
+51. Which of the following statements about external tables is true?
+A) They can have indexes.
+B) They can have constraints or triggers.
+C) They cannot be written to with DML commands.
+D) They cannot be used in joins, views, and subqueries
+Correct Answer: C) They cannot be written to with DML commands.
+
+52. You are writing a select statement to find every product whose name contains a specific character. Which keyword should you use in your where clause?
+A) INCLUDES
+B) FIND
+C) BETWEEN
+D) LIKE
+Correct Answer: D) LIKE
+
+53. You need to establish a relationship between the data that is in the two tables. Which constraint should you define?
+A) Link Key
+B) Foreign Key
+C) Index Key
+D) Default Key
+Correct Answer: B) Foreign Key
+
+54. You need to check the integrity of various tables used in the database. You need to issue the CHECK TABLE command. For which of the following tables will this command work? (Choose two.)
+A) InnoDB
+B) FEDERATED
+C) MyISAM
+D) MERGE
+Correct Answer: A) InnoDB, C) MyISAM
+
+55. Matching:
+- You can delete data by using a stored procedure -> Yes
+- A function must have a return value -> Yes
+- A stored procedure must have a return value -> No
+
+56. You need to rename a column in a database table. Which data definition language (DDL) statement should you use?
+A) CREATE
+B) ALTER
+C) UPDATE
+D) INSERT
+Correct Answer: B) ALTER
+
+57. Matching Fill-in-the-blank:
+- The [client] computer is the first line of defense against SQL injections and weak input validation.
+- The [s01.contoso.com] computer should be formatted with NTFS to protect program, database and log files from unauthorized access.
+
+58. What are the errors in the CREATE Product table query? (Choose two.)
+A) An attribute declared as a primary key cannot contain NULL values.
+B) Each attribute should be defined as a primary key separately.
+C) A table cannot have two primary keys.
+D) ProductName is declared as Varchar without specifying the width of the column.
+Correct Answer: A) An attribute declared as a primary key cannot contain NULL values., D) ProductName is declared as Varchar without specifying the width of the column.
+
+59. On which database structure does an insert statement operate?
+A) Role
+B) Stored procedure
+C) User
+D) Trigger
+E) Table
+Correct Answer: E) Table
+
+60. While a clustered index is based on a ___________, a nonclustered index can be based on any other field.
+A) column
+B) foreign key field
+C) row
+D) primary key field
+Correct Answer: D) primary key field
+
+Database Management MCQ - Batch 3 (Q61 - Q90)
+---------------------------------------------------------
+
+61. You are a database developer for a database named Customers hosted on a SQL Server 2008 server. Recently, several customers were deleted from the Customers database. To ensure this is not repeated in future, you have decided to create a DML trigger to prevent it. What code will create the trigger to meet your goals? Each correct answer represents a complete solution. (Choose all that apply.)
+A) CREATE TRIGGER trgDeleteCustomer ON dbo.Customers BEFORE DELETE AS RAISERROR...
+B) CREATE TRIGGER trgDeleteCustomer ON dbo.Customers AFTER DELETE AS IF (SELECT COUNT(*) FROM DELETED) > 0 BEGIN RAISERROR...
+C) CREATE TRIGGER trgDeleteCustomer ON dbo.Customers AFTER DELETE AS IF(SELECT COUNT(*) FROM DELETED) > 1 BEGIN RAISERROR...
+D) CREATE TRIGGER trgDeleteCustomer ON dbo.Customers AFTER DELETE AS RAISERROR...
+Correct Answer: B) AFTER DELETE AS IF (SELECT COUNT(*) FROM DELETED) > 0 BEGIN RAISERROR... AND D) AFTER DELETE AS RAISERROR...
+
+62. You accept an IT internship at a local charity. The charity asks you to keep a record of its volunteers by using a database table named Volunteer. The table has the following columns and rows: [Id, GivenName] [1, Tia], [2, Susana], [3, Joey]. When volunteer information changes, you must update the table. You need to change Tia's name to Kimberly. Which statement should you choose?
+A) SET GivenName = 'Kimberly' FROM Volunteer WHERE GivenName = 'Tia'
+B) SET Volunteer TO GivenName = 'Kimberly' WHERE GivenName = 'Tia'
+C) UPDATE GivenName = 'Kimberly' FROM Volunteer WHERE GivenName = 'Tia'
+D) UPDATE Volunteer SET GivenName = 'Kimberly' WHERE GivenName = 'Tia'
+Correct Answer: D) Option D
+
+63. Which statement best defines a view?
+A) a location within a database that stores general information
+B) a stored statement that leads one to specific information
+C) a location within a database that stores specific information
+D) a stored statement that leads one to general information
+Correct Answer: B) a stored statement that leads one to specific information
+
+64. One reason to add an index is to:
+A) Decrease storage space.
+B) Improve performance of select statements.
+C) Improve performance of insert statements.
+D) Increase database security.
+Correct Answer: B) Improve performance of select statements.
+
+65. You execute the following statement: SELECT DepartmentName FROM Department WHERE DepartmentID = (SELECT DepartmentID FROM Employee WHERE EmployeeID = 1234). This statement is an example of a/an:
+A) Outer join
+B) Cartesian product
+C) Subquery
+D) Union
+Correct Answer: C) Subquery
+
+66. You need to store the contact information for each student in your school database. You should store each student's information in a:
+A) Row
+B) Stored procedure
+C) Variable
+D) Function
+Correct Answer: A) Row
+
+67. You have a table named Product. You create a view that includes all the products from the Product table that are in the Furniture category. You execute a statement on the Product table that deletes all the products in the Furniture category. After you execute the statement, the result set of the view is:
+A) Archived
+B) Deleted
+C) Unchanged
+D) Empty
+Correct Answer: D) Empty
+
+68. You work as a Database Administrator for DataOneWorld Inc. Management instructs you to remove an object from the relational database management system. Which of the following statements will you use to accomplish the task?
+A) CREATE
+B) ALTER
+C) SELECT
+D) DROP
+Correct Answer: D) DROP
+
+69. You have a table named Customer. You need to add a new column named District. Which statement should you use?
+A) MODIFY TABLE Customer ADD (District INTEGER)
+B) ALTER TABLE Customer MODIFY (District INTEGER)
+C) MODIFY TABLE Customer (District INTEGER)
+D) ALTER TABLE Customer ADD (District INTEGER)
+Correct Answer: D) Option D (ALTER TABLE Customer ADD)
+
+70. Matching: Match the CourseName to the StudentName based on the data sets provided.
+- Brad (CourseID 4) -> Reading
+- Joe (CourseID 1) -> Math
+- Susan (CourseID 2) -> Science
+Correct Answer: Brad matches to Reading, Joe matches to Math, Susan matches to Science
+
+71. You have a table that contains product IDs and product names. You need to write an UPDATE statement to change the name of a specific product to glass. What should you include in the update statement?
+A) LET ProductName = 'glass'
+B) ASSIGN ProductName = 'glass'
+C) EXEC ProductName = 'glass'
+D) SET ProductName = 'glass'
+Correct Answer: D) SET ProductName = 'glass'
+
+72. You have a table named Student that contains 100 rows. Some of the rows have a NULL value in the FirstName column. You execute the following statement: DELETE FROM Student. What is the result?
+A) All rows in the table will be deleted.
+B) You will receive an error message.
+C) All rows containing a NULL value in the FirstName column will be deleted.
+D) All rows and the table definition will be deleted.
+Correct Answer: A) All rows in the table will be deleted.
+
+73. You need to retrieve data from two related database tables based on a column that exists in both tables. Which command should you use in a query?
+A) JOIN
+B) INTERSECT
+C) TRUNCATE
+D) UNION
+Correct Answer: A) JOIN
+
+74. You have a Customer table and an Order table. You join the Customer table with the Order table by using the CustomerID column. The results include: All customers and their orders, Customers who have no orders. Which type of join do these results represent?
+A) Complete join
+B) Outer join
+C) Partial join
+D) Inner join
+Correct Answer: B) Outer join
+
+75. Matching:
+- StateID is a/an [primary key] in the State table.
+- StateIS is a/an [foreign key] in the Address table.
+
+76. Matching: The StateID column is unique in the State table. The AddressID column is unique in the Address table. The two tables are related by the StateID column.
+- Each value in a field in a table must be unique -> No
+- Each row in a table must be unique -> Yes
+- Each column name in a table must unique -> Yes
+
+77. Which key uniquely identifies a row in a table?
+A) local
+B) primary
+C) superkey
+D) foreign
+Correct Answer: B) primary
+
+78. Which of the following commands can be used to change the authorization type in DB2 9? Each correct answer represents a complete solution. (Choose all that apply.)
+A) RESET DATABASE CONFIGURATION
+B) UPDATE DATABASE CONFIGURATION
+C) SET AUTHORIZATION
+D) UPDATE DBM CFG
+Correct Answer: B) UPDATE DATABASE CONFIGURATION, D) UPDATE DBM CFG
+
+79. You are writing an SQL statement to retrieve rows from a table. Which data manipulation language (DML) command should you use?
+A) OUTPUT
+B) READ
+C) GET
+D) SELECT
+Correct Answer: D) SELECT
+
+80. You have two tables named Salesperson and Sales. You need to ensure that each record in the Sales table has a valid associated salesperson record in the Salesperson table. Which database object should you add to the Sales table?
+A) Nonclustered index
+B) Foreign key
+C) Clustered index
+D) Primary key
+Correct Answer: B) Foreign key
+
+81. A named group of SQL statements that can be executed in a database is called a:
+A) Subroutine
+B) Formula
+C) Method
+D) Stored procedure
+Correct Answer: D) Stored procedure
+
+82. Which constraint ensures a unique value in the ID column for each customer?
+A) DISTINCT
+B) FOREIGN KEY
+C) PRIMARY KEY
+D) SEQUENTIAL
+Correct Answer: C) PRIMARY KEY
+
+83. You need to populate a table named EmployeeCopy with data from an existing table named Employee. Which statement should you use?
+A) SELECT * INTO EmployeeCopy SELECT * FROM Employee
+B) INSERT * FROM Employee INTO EmployeeCopy
+C) COPY * INTO Employee SELECT * FROM Employee
+D) INSERT INTO EmployeeCopy SELECT * FROM Employee
+Correct Answer: D) Option D
+
+84. This question requires that you evaluate the underlined text to determine if it is correct.
+[Views] are database objects that contain all of the data in a database.
+A) Queries
+B) No change is needed
+C) Stored procedures
+D) Tables
+Correct Answer: D) Tables
+
+85. Which of the following is the process of creating a design for the database that will support the enterprise's operations and objectives for the required database system?
+A) Application design
+B) Database planning
+C) Database design
+D) Identifying relationships between objects
+Correct Answer: C) Database design
+
+86. Your class project requires that you help a charity to create a website that registers volunteers. The website must store the following data about the volunteers: Given name, Surname, Telephone number, Email address. You need to recommend a correct way to store the data. What do you recommend?
+A) Create a view that contains columns that are named given name surname, phone number, and email.
+B) Create a table that contains columns that are named given name, surname, phone number, and email.
+C) Create a view that contains rows that are named given name surname, phone number, and email
+D) Create a table that contains rows that are named given name, surname, phone number, and email.
+Correct Answer: B) Create a table that contains columns that are named given name, surname, phone number, and email.
+
+87. You have a table named Product that contains one million rows. You need to search for product information in the Product table by using the product's unique ID. What will make this type of search more efficient?
+A) An index
+B) A subquery
+C) A cursor
+D) A trigger
+Correct Answer: A) An index
+
+88. You delete rows in a table named Order. The corresponding rows in the OrderItem table are automatically deleted. This process is an example of a/an:
+A) Inherited delete
+B) Waterfall delete
+C) Cascade delete
+D) Functional delete
+E) Domino delete
+Correct Answer: C) Cascade delete
+
+89. John works as a Database Administrator for Bluewell Inc. A table in the database has a candidate key and an attribute that is not a constituent of the candidate key. The non-key attribute depends upon the whole of the candidate key rather than just a part of it. Which of the following normal forms is represented in the scenario?
+A) 4 NF
+B) 1 NF
+C) 3 NF
+D) 2 NF
+Correct Answer: D) 2 NF
+
+90. Which category of SQL statements is used to add, remove, and modify database structures?
+A) Data control language (DCL)
+B) Data manipulation language (DML)
+C) Data definition language (DDL)
+D) Data access language (DAL)
+Correct Answer: C) Data definition language (DDL)
+
+Database Management MCQ - Batch 4 (Q91 - Q120)
+---------------------------------------------------------
+
+91. A database contains two tables named Customer and Order. You execute the following statement: DELETE FROM Order WHERE CustomerID = 209. What is the result?
+A) The first order for CustomerID 209 is deleted from the Order table.
+B) All orders for CustomerID 209 are deleted from the Order table, and CustomerID 209 is deleted from the Customer table.
+C) All orders for CustomerID 209 are deleted from the Order table.
+D) CustomerID 209 is deleted from the Customer table.
+Correct Answer: C) All orders for CustomerID 209 are deleted from the Order table.
+
+92. You are creating a table to store customer data. The AccountNumber column uses values that always consist of one letter and four digits. Which data type should you use for the AccountNumber column?
+A) BYTE
+B) DOUBLE
+C) SMALLINT
+D) CHAR
+Correct Answer: D) CHAR
+
+93. Which command should you use to add a column to an existing table?
+A) ALTER
+B) UPDATE
+C) INSERT
+D) MODIFY
+E) CHANGE
+Correct Answer: A) ALTER
+
+94. Fill in the blank with the appropriate word. The ________ model for database management is a database model based on first-order predicate logic.
+A) Truncate
+B) Relational
+C) Traditional
+Correct Answer: B) Relational
+
+95. Before running a DELETE statement, it is always a good idea to run a(n) ________ statement on the table that is about to be changed.
+A) SELECT
+B) DROP
+C) INSERT
+D) UPDATE
+Correct Answer: A) SELECT
+
+96. You need to store product quantities, and you want to minimize the amount of storage space that is used. Which data type should you use?
+A) FLOAT
+B) COUNT
+C) INTEGER
+D) DOUBLE
+Correct Answer: C) INTEGER
+
+97. Mark works as a Database Administrator for VCEplus Inc. Management instructs him to ensure that no inconsistent data is entered in the database. Which of the following will help him to accomplish the task?
+A) Native auditing
+B) Encryption
+C) Abstraction
+D) Authentication
+E) Referential integrity
+Correct Answer: E) Referential integrity
+
+98. Linda works as a Database Designer for Lion Inc. The database has a table named Author, which has a composite key, AuthorID and TitleID. Royalty and LiteraryAgent are the other attributes. The functional dependencies are such that AuthorID + TitleID -> Royalty and AuthorID -> LiteraryAgent. Which of the following is true about this table?
+A) It violates 2 NF.
+B) It violates 4 NF.
+C) There is no violation.
+D) It violates 1 NF.
+Correct Answer: A) It violates 2 NF.
+
+99. This question requires that you evaluate the underlined text to determine if it is correct.
+In a database table, each column represents a [unique record].
+A) Table
+B) No change is needed
+C) Index
+D) Row
+Correct Answer: D) Row
+
+100. Smith works as a Database Administrator for DWorlds Inc. The management instructs him to plan a database where identifying the key objects or entities for database management is important. Which of the following database planning steps will help him to accomplish the task?
+A) Object modeling
+B) Gathering information
+C) Object identification
+D) Identifying the relationships between objects
+Correct Answer: C) Object identification
+
+101. The component that holds information for a single entry in a table is called a:
+A) COLUMN
+B) ROW
+C) DATA TYPE
+D) VIEW
+Correct Answer: B) ROW
+
+102. Matching:
+- The VARCHAR data type contains only numeric characters. -> No
+- The NUMERIC data type contains only numbers that have decimal places. -> Yes
+- The INT data type contains only whole numbers. -> Yes
+
+103. Matching (Server Roles):
+- The user can perform [unlimited] actions on data that is on the server.
+- The user can perform [unlimited] actions on database objects that are on the server.
+
+104. One reason to create a stored procedure is to:
+A) Give the user control of the query logic.
+B) Bypass case sensitivity requirements.
+C) Improve performance.
+D) Minimize storage space.
+Correct Answer: C) Improve performance.
+
+105. You have a table named Employee that includes four columns. You execute the following statement: SELECT * FROM Employee. Which columns are returned?
+A) only the first and last columns
+B) only the last column
+C) all columns
+D) only the first column
+Correct Answer: C) all columns
+
+106. Which of the following values cannot be stored in a character column defined as the primary key of a table?
+A) '0'
+B) 'null'
+C) null
+D) ''
+Correct Answer: C) null
+
+107. Consider the code below:
+1. CREATE Table Production
+2. (Fruit_type VarChar,
+3. Fruit_name Char(20),
+4. Quantity Int(3))
+Which of the above-mentioned lines has an error?
+A) Line 4
+B) Line 3
+C) Line 2
+D) Line 1
+Correct Answer: C) Line 2 (VarChar requires a specified length)
+
+108. You have a table that contains (ProductID, ProductName, Color1, Color2, Color3). You break the table into two tables: (ProductID, ProductName) and (ProductID, Color). This process is referred to as:
+A) denormalization
+B) defragmentation
+C) normalization
+D) fragmentation
+Correct Answer: C) normalization
+
+109. You need to establish a set of permissions that you can routinely assign to new users. What should you create?
+A) List
+B) Role
+C) Resource
+D) Group
+Correct Answer: B) Role
+
+110. You have a database that contains 10 terabytes of data. You need to back up the database every two hours. Which type of backup should you use?
+A) incremental
+B) archive
+C) partial
+D) full
+Correct Answer: A) incremental
+
+111. Which keyword would you use in a select statement to return rows that meet a specific condition?
+A) ORDER BY
+B) WHERE
+C) FROM
+D) UNION
+Correct Answer: B) WHERE
+
+112. You have the following table definition: CREATE TABLE Product (ProductID INTEGER, Name VARCHAR(20)). You need to insert a new product. The product's name is Plate and the product's ID is 12345. Which statement should you use?
+A) INSERT INTO Product VALUES (ProductID = 12345, Name = 'Plate')
+B) INSERT NEW ProductID = 12345, Name = 'Plate' INTO Product
+C) INSERT 12345, 'Plate' INTO Product
+D) INSERT INTO Product (ProductID, Name) VALUES (12345, 'Plate')
+Correct Answer: D) Option D
+
+113. This question requires that you evaluate the underlined text to determine if it is correct.
+A view [can be used to ensure referential integrity].
+A) Limit access to specific rows or columns of data in a table.
+B) Save historical data before deleting it from the base table.
+C) No change is needed.
+D) Save an extra copy of data stored in a separate table.
+Correct Answer: A) Limit access to specific rows or columns of data in a table.
+
+114. You need to enable a new employee to authenticate to your database. Which command should you use?
+A) INSERT USER
+B) ADD USER
+C) ALLOW USER
+D) CREATE USER
+E) ALTER USER
+Correct Answer: D) CREATE USER
+
+115. What are three valid data manipulation language (DML) commands? (Choose three.)
+A) INSERT
+B) OUTPUT
+C) UPDATE
+D) DELETE
+E) COMMIT
+Correct Answer: A) INSERT, C) UPDATE, D) DELETE
+
+116. This question requires that you evaluate the underlined text to determine if it is correct.
+Use [Indexing] to create, remove, or change database objects.
+A) Data definition language (DDL) statements
+B) No change is needed.
+C) A unique constraint
+D) Data manipulation language (DML) statements
+Correct Answer: A) Data definition language (DDL) statements
+
+117. The Product table contains the following data: (1234, Spoon, 33), (2615, Fork, 17), (3781, Plate, 20), (4589, Cup, 51). You execute the following statement: SELECT COUNT(*) FROM Product WHERE Quantity > 18. What is the value returned by this statement?
+A) 3
+B) 2
+C) 4
+D) 1
+Correct Answer: A) 3
+
+118. Matching (Data Types):
+you have a database table that stores information about school attendance.
+You have a data set that is defined as follows:
+You have the following requirements:
+. StudentName must consist of a string of characters.
+. GradeLevel must be only a whole number.
+. DaysAbsent can have one number after the decimal.
+Match the data types to the column names.
+Instructions: To answer, drag the appropriate data type from the column on the left to its column name on the right Each data type may be used once, more than once, or
+not at all. Each correct match is worth one point.
+- StudentName -> VARCHAR
+- GradeLevel -> INT
+- DaysAbsent -> DECIMAL
+
+119. You must insert a record (1234 Main Street, Dallas, TX, 75201) into the AddressInfo table. Which two SQL statements can you use? (Choose two.)
+A) INSERT INTO AddressInfo ('1234 Main Street', 'Dallas', 'TX', '75201') VALUES ([StreetAddress], [City], [State], [PostalCode])
+B) INSERT INTO AddressInfo ([StreetAddress], [City], [State], [PostalCode]) VALUES ('1234 Main Street', 'Dallas', 'TX', '75201')
+C) INSERT INTO AddressInfo VALUES ('1234 Main Street', 'Dallas', 'TX', '75201')
+D) UPDATE AddressInfo SET [StreetAddress]='1234 Main Street'...
+Correct Answer: B) Option B, C) Option C
+
+120. Which command removes a table from a database?
+A) DROP TABLE
+B) ELIMINATE TABLE
+C) CLEAR TABLE
+D) DELETE TABLE
+Correct Answer: A) DROP TABLE
+
+Database Management MCQ - Batch 5 (Q121 - Q150)
+---------------------------------------------------------
+
+121. You execute a statement inside a transaction to delete 100 rows from a table. The transaction fails after only 40 rows are deleted. What is the result in the database?
+A) The transaction will restart.
+B) The table will be corrupted.
+C) Forty (40) rows will be deleted from the table.
+D) No rows will be deleted from the table.
+Correct Answer: D) No rows will be deleted from the table.
+
+122. You manage a large database named Sales. The Sales database contains a table named OrderDetails, which is a heavily transacted table with frequent inserts. Indexes in the table often become fragmented due to excessive page splitting. You want to minimize the amount of fragmentation due to page splits. What should you do?
+A) Change the fillfactor for the indexes to 0.
+B) Change the fillfactor for the indexes to 60.
+C) Change the fillfactor for the indexes to 100.
+D) Update the statistics on the indexes.
+Correct Answer: B) Change the fillfactor for the indexes to 60.
+
+123. Matching: 
+
+flight number | Airline
+1 |Blue yonder airlines
+2 |Margie's travel
+3 |Northwind Traders
+- Adding a [clustered index] on the FlightNumber column physically sorts rows in the table by FlightNumber.
+- Adding a [non-clustered index] on the Airline column retrieves data faster, but will not physically sort rows in the table by Airline.
+
+124. You need to combine the results of two queries into a single result that contains all of the rows from both queries. Which Structured Query Language (SQL) statement should you use?
+A) UNION
+B) TRUNCATE
+C) EXCEPT
+D) JOIN
+Correct Answer: A) UNION
+
+125. What statement is used to change existing data?
+A) MODIFY
+B) CHANGE
+C) NEW
+D) UPDATE
+Correct Answer: D) UPDATE
+
+126. Which of the following scripts is used to convert Unix-type zone files into SQL statements, and loads the time zone tables in a mysql database?
+A) mysql_time_to_sql
+B) mysql_timezone_to_sql
+C) mysql_tz_to_sql
+D) mysql_tzinfo_to_sql
+Correct Answer: D) mysql_tzinfo_to_sql
+
+127. This question requires that you evaluate the underlined text to determine if it is correct. Use the [FROM] keyword in a SELECT statement to return rows that meet a specific condition.
+A) WHERE
+B) ORDER BY
+C) UNION
+D) No change is needed
+Correct Answer: A) WHERE
+
+128. One error that may occur when manipulating data is a missing ________:
+A) table
+B) keyword
+C) column
+D) query
+Correct Answer: B) keyword
+
+129. Matching (Set up a view):
+- First Code Segment -> CREATE VIEW [dbo].[NorthAmericanMammals_View]
+- Second Code Segment -> AS SELECT a.Id, a.Name
+- Third Code Segment -> FROM Animal a
+
+130. You accept an IT internship at a local charity. The charity has two tables in their data model named Chapter and Language. You create a third table named ChapterLanguage to relate the Chapter table and the Language table. You need to select columns from the Chapter and Language tables to create a composite primary key for the ChapterLanguage table. Which two columns should you select? (Choose two.)
+A) City
+B) LanguageId
+C) ChapterId
+D) Region
+E) Country
+F) LanguageName
+Correct Answer: B) LanguageId, C) ChapterId
+
+131. Matching (CREATE TABLE variables):
+- [Id] Code Segment 1 -> INT NOT NULL PRIMARY KEY,
+- [DateOfBirth] Code Segment 2 -> DATE NULL,
+- [Photo] Code Segment 3 -> IMAGE NULL,
+
+132. Your Company is designing and developing a number of databases for a stock exchange. One of the databases will contain highly sensitive data... It needs to be ensured that even if unauthorized access to the database is obtained, the rogue user is unable to read the data. Which of the following protection techniques will you suggest for this database?
+A) Encryption
+B) Authentication
+C) Integrity controls
+D) Native auditing
+Correct Answer: A) Encryption
+
+133. You need to insert two new products into the Product table. The first product is named Book and has an ID of 125. The second product is named Movie and has an ID of 126. Which statement should you use?
+A) INSERT INTO Product VALUES (ID = 125, 126) (Name = 'Book', 'Movie')
+B) INSERT INTO Product (ID, Name) VALUES (125, 'Book') INSERT INTO Product (ID, Name) VALUES (126, 'Movie')
+C) INSERT 125, 126, 'Book', 'Movie' INTO Product
+D) INSERT NEW ID = 125 AND 126, Name = 'Book' AND 'Movie' INTO Product
+Correct Answer: B) Option B
+
+134. Matching (Index performance):
+- A clustered index improves the performance of queries that [return large result sets].
+- A clustered index improves the performance of queries on columns that [are accessed sequentially].
+
+135. What is the relationship between the foreign key and primary key? (Choose all that apply.)
+A) There is no relationship between a primary key and a foreign key.
+B) A foreign key and a primary key create a link between two entities.
+C) A foreign key constraint works in conjunction with a primary key constraint to enforce referential integrity among related entities.
+D) A foreign key ties attribute(s) of an entity to the primary key of another entity, for the purpose of creating a dependency.
+Correct Answer: C) Option C, D) Option D
+
+136. Which of the following database terms is described in the statement below? It prevents the current database operation from reading or writing a data item while the data item is being accessed by another operation.
+A) Deadlock
+B) Constraint
+C) Lock
+D) Encryption
+Correct Answer: C) Lock
+
+137. The terms "bitmap," "b-tree," and "hash" refer to which type of database structure?
+A) Index
+B) Stored procedure
+C) Trigger
+D) View
+E) Function
+Correct Answer: A) Index
+
+138. You have the database table named Cars. You have the following Structured Query Language (SQL) statement: SELECT * FROM Cars c WHERE c.Origin <> 'USA' AND c.Color <> 'Black'. How many rows are returned by the SQL statement?
+A) 7
+B) 6
+C) 5
+D) 4
+Correct Answer: D) 4
+
+139. You want to recover one or more tablespaces to a point in time older than the rest of the database. Which of the following are the recovery situations in which tablespace Point-In-Time Recovery (TSPITR) should be used? (Choose all that apply.)
+A) To recover a DML statement that has affected only a subset of the database
+B) To recover a tablespace that contains rollback segments
+C) To recover a tablespace on a very large database.
+D) To recover a table that has become logically corrupted
+Correct Answer: A) Option A, B) Option B, D) Option D
+
+140. In which situation do you need to perform a restore on a database?
+A) when you encounter an error in your application
+B) when you need to roll back a transaction
+C) when data needs to be deleted from the database
+D) when data becomes corrupted in the database
+Correct Answer: D) when data becomes corrupted in the database
+
+141. You have the following table definition: CREATE TABLE Product (ID INTEGER PRIMARY KEY, Name VARCHAR(20), Quantity INTEGER). You execute the following statement: SELECT Name FROM Product WHERE Quantity IS NOT NULL. How many rows are returned? (Assume 4 rows exist, with 1 having a NULL quantity).
+A) 3
+B) 1
+C) 4
+D) 2
+E) 0
+Correct Answer: A) 3
+
+142. Which of the following can be used to populate a table? (Choose all that apply.)
+A) Data Pump
+B) SQL*Loader
+C) INSERT statement
+D) MERGE statement
+Correct Answer: A) Data Pump, B) SQL*Loader, C) INSERT statement, D) MERGE statement
+
+143. What is one difference between an update statement and a delete statement?
+A) A delete statement works only within a stored procedure.
+B) An update statement can change only one row.
+C) An update statement does not remove rows from a table.
+D) A delete statement cannot use a where clause.
+Correct Answer: C) An update statement does not remove rows from a table.
+
+144. Which of the following are the types of prototyping strategies? (Choose two.)
+A) Physical prototyping
+B) Evolutionary prototyping
+C) Revolutionary prototyping
+D) Requirements prototyping
+Correct Answer: B) Evolutionary prototyping, D) Requirements prototyping
+
+145. Which keyword can be used in a create table statement?
+A) ORDER BY
+B) UNIQUE
+C) GROUP BY
+D) DISTINCT
+Correct Answer: B) UNIQUE
+
+146. Which of the following DML SQL statements support usage of correlated sub-queries? (Choose all that apply.)
+A) INSERT
+B) SELECT
+C) DELETE
+D) UPDATE
+Correct Answer: B) SELECT, C) DELETE, D) UPDATE
+
+147. What statement is used to insert values into a table?
+A) ADD INTO ... VALUES
+B) ADD VALUES
+C) INSERT VALUES ... INTO
+D) INSERT INTO ... VALUES
+Correct Answer: D) INSERT INTO ... VALUES
+
+148. Which of the following steps in database planning helps to determine the requirements of the database through interviewing?
+A) Gathering information
+B) Identifying the objects
+C) Identifying the type of information for each object
+D) Identifying the relationship between objects
+E) Modeling the object
+Correct Answer: A) Gathering information
+
+149. Denormalization is performed in order to:
+A) Eliminate repeating groups.
+B) Improve query performance.
+C) Reduce redundancy.
+D) Create smaller tables.
+Correct Answer: B) Improve query performance.
+
+150. You work as a Database Administrator. An employee has fired a query, including a DML statement, such as INSERT, against a table named Sales. You notice that the DML statement has not executed. What will you do to resolve the issue? (Choose two.)
+A) Add more space to the tablespace and increase the users quota on the tablespace.
+B) Provide an appropriate privilege or create views on the Sales table, and grant privileges on the view.
+C) Provide redundant network paths from the client computer to the server...
+D) Clean up all the uncommitted transactions on the Sales table.
+Correct Answer: A) Option A, B) Option B
+
+Database Management MCQ - Batch 6 (Q151 - Q180)
+---------------------------------------------------------
+
+151. You need to add rows to a database table. Which Structured Query Language (SQL) keyword should you use?
+A) JOIN
+B) CREATE
+C) INSERT
+D) UPDATE
+Correct Answer: C) INSERT
+
+152. What is the ideal time to back up dynamic log files?
+A) When the server is shut down.
+B) You can back up dynamic log files any time.
+C) When the server is stopped.
+D) When the server is running.
+Correct Answer: C) When the server is stopped.
+
+153. You have a table that contains information about all students in your school. Which SQL keyword should you use to change a student's first name in the table?
+A) SELECT
+B) UPDATE
+C) CHANGE
+D) INSERT
+Correct Answer: B) UPDATE
+
+154. Matching (Database recovery models):
+- Using the simple recovery model for database backups provides [more] work-loss exposure than the full recovery model.
+- Using the simple recovery model for database backups provides [less] log file backups than the full recovery model.
+
+155. You work as a MySQL Database Administrator. Your server crashed and it was recovered and made online within half an hour. What will you do to ensure that the table structure and contents are in a proper state?
+A) Perform a table optimization operation.
+B) Perform a table repair operation.
+C) Perform a table analysis operation.
+D) Perform a table check operation.
+Correct Answer: D) Perform a table check operation.
+
+156. Which of the following provides reliable units of work that allow correct recovery from failures and keeps a database consistent even in cases of system failure?
+A) Database transaction
+B) Concurrency control
+C) Database security
+D) Two-phase commit
+Correct Answer: A) Database transaction
+
+157. Which of the following is the process of extracting trails on a regular basis so that they can be transferred to a designated security system where the database administrators do not have access?
+A) Encryption
+B) Native auditing
+C) Abstraction
+D) Database security
+Correct Answer: B) Native auditing
+
+158. Which of the following is a building working model of a database system?
+A) Prototyping
+B) Bottom-up approach
+C) Conceptual database design
+D) Top-down approach
+Correct Answer: A) Prototyping
+
+159. You need to delete a database table. Which data definition language (DDL) keyword should you use?
+A) ALTER
+B) DROP
+C) TRUNCATE
+D) DELETE
+Correct Answer: B) DROP
+
+160. This question requires that you evaluate the underlined text to determine if it is correct.
+Use the [ALLOW SELECT] command to give a user permission to read the data in a table.
+A) LET READ
+B) GRANT SELECT
+C) No change is needed
+D) PERMIT READ
+Correct Answer: B) GRANT SELECT
+
+161. To change a view, with what keyword should CREATE in the CREATE VIEW command be replaced?
+A) UPDATE
+B) REPLACE
+C) ALTER
+D) CHANGE
+Correct Answer: C) ALTER
+
+162. One error that may occur is attempting to retrieve data with a well-written query but against the wrong _________.
+A) row
+B) table
+C) column
+D) database
+Correct Answer: D) database
+
+163. What clause should always be included in an UPDATE statement?
+A) GROUP BY
+B) WHERE
+C) FROM
+D) HAVING
+Correct Answer: B) WHERE
+
+164. Your database contains a table named Customer. You need to delete the record from the Customer table that has a CustomerID of 12345. Which statement should you use?
+A) UPDATE Customer DELETE * WHERE CustomerID = 12345
+B) DELETE CustomerID FROM Customer WHERE CustomerID = 12345
+C) UPDATE CustomerID FROM Customer DELETE * WHERE CustomerID = 12345
+D) DELETE FROM Customer WHERE CustomerID = 12345
+Correct Answer: D) Option D
+
+165. In addition to taking backups of your databases, you should also backup up files stated below. Which of these files store updates that have been made after the backup was made?
+A) Binary log files
+B) My.ini
+C) My.cnf
+D) Master.info
+Correct Answer: A) Binary log files
+
+166. Which of the following are DML commands? Each correct answer represents a complete solution. (Choose all that apply.)
+A) SELECT
+B) INSERT
+C) ALTER
+D) DELETE
+E) SELECT INTO
+F) UPDATE
+Correct Answer: B) INSERT, D) DELETE, F) UPDATE
+
+167. Data in a database is stored in:
+A) Stored procedures
+B) Queries
+C) Data types
+D) Tables
+Correct Answer: D) Tables
+
+168. Matching:
+- A full database backup is a copy of all the data in the entire database. -> Yes
+- A transaction log backup backs up all the data in the database. -> No
+- A differential backup copies only data that was changed before the last full backup. -> No
+- A file or filegroup restore specified a portion of the database to recover. -> Yes
+
+169. Which of the following is a design of the user interface and the application programs that use and process the database?
+A) Database Planning
+B) Application Design
+C) Object Modelling
+D) Database Design
+Correct Answer: B) Application Design
+
+170. Mark works as a Database Administrator for DataOneWorld Inc. Management instructs him to provide an additional security layer to the database to prevent unauthorized viewing of data with the help of an algorithm called cipher. Which of the following will help him to accomplish the task?
+A) Encryption
+B) Abstraction
+C) Native auditing
+D) Authentication
+Correct Answer: A) Encryption
+
+171. You work as a Database Administrator for InfoTech Inc. The company has a database and they want you to create a design for a database that will support the enterprise's operations and objectives. Which of the following will you use to accomplish the task?
+A) Requirements collection and analysis
+B) Database design
+C) Application design
+D) Database planning
+Correct Answer: B) Database design
+
+172. This question requires that you evaluate the underlined text to determine if it is correct.
+Use the [ALTER] statement to add a new table in a database.
+A) No change is needed
+B) CREATE
+C) INSERT
+D) UPDATE
+Correct Answer: B) CREATE
+
+173. What statement is used to copy records from an existing table to a new table?
+A) SELECT WITHIN
+B) INSERT INTO SELECT
+C) SELECT
+D) SELECT INTO
+Correct Answer: D) SELECT INTO
+
+174. You have a table named Product that contains the following data (ProductID 3296 is a primary key). You execute the following statement: INSERT INTO Product VALUES (3296, 'Table', 4444). What is the result?
+A) a foreign key constraint violation
+B) a syntax error
+C) a new row in the Product table
+D) a primary key constraint violation
+E) a new row in the Category table
+Correct Answer: D) a primary key constraint violation
+
+175. You manage a database named Exams accessed via a website... You need one of the columns in the History table to record what time of day that a user has taken an exam. Additionally, you need this column to have time zone awareness. What data type should you use?
+A) datetime
+B) Use two different columns with one column of datetime, and the second column indicating the UTC offset.
+C) datetime2
+D) datetimeoffset
+Correct Answer: D) datetimeoffset
+
+176. Which of the following steps in database planning is used to record an object so that it is represented visually in the system?
+A) Identifying the relationships between objects
+B) Gathering information
+C) Object identification
+D) Object modelling
+Correct Answer: D) Object modelling
+
+177. Which of the following is used to give a default value to a column if the value for that column is unknown?
+A) Concurrency
+B) Transaction
+C) DEFAULT constraint
+D) Nested transaction
+Correct Answer: C) DEFAULT constraint
+
+178. Which statement deletes the rows where the employee's phone number is not entered?
+A) DELETE FROM Employee WHERE Phone IS NULL
+B) DELETE FROM Employee WHERE Phone IS NOT NULL
+C) DELETE FROM Employee WHERE Phone = ''
+D) DELETE FROM Employee WHERE Phone = NULLABLE
+Correct Answer: A) Option A
+
+179. Which statement should you use to remove a foreign key?
+A) DELETE FOREIGN KEY
+B) DELETE TABLE
+C) ALTER FOREIGN KEY
+D) ALTER TABLE
+Correct Answer: D) ALTER TABLE
+
+180. You have a table named Product. The Product table has columns for ProductDescription and ProductCategory. You need to change the ProductCategory value for all the spoons in the Product table to 43. Which statement should you use?
+A) UPDATE Product SET ProductCategory = 43 WHERE ProductDescription = 'spoon'
+B) SET Product WHERE ProductDescription = 'spoon' TO ProductCategory = 43
+C) UPDATE Product WHERE ProductDescription = 'spoon' SET ProductCategory = 43
+D) SET Product TO ProductCategory = 43 WHERE ProductDescription = 'spoon'
+Correct Answer: A) Option A
+
+Database Management MCQ - Batch 7 (Q181 - Q200)
+---------------------------------------------------------
+
+181. HOTSPOT. You are structuring a table in a relational database. Match the statements:
+- Parse the images: -> Azure Cognitive Services
+- Upload the data to the database: -> Azure Data Factory
+
+182. Suzanne works as a Database Designer for DataOneWorld Inc. She is assigned the task of decomposing the components of a database, but she has to ensure that all the components are decomposed to only some extent. Which of the following approaches will she use to accomplish the task?
+A) Inside-out approach
+B) Mixed approach
+C) Bottom-up approach
+D) Top-down approach
+Correct Answer: B) Mixed approach
+
+183. James works as an Administrator for Softech Inc. The company has a SQL Server 2005 computer named SQL1. The company has six departments... James wants to create a separate database on SQL1 for each department which will store the department related information. Users in each department must be able to read and update data in the database belonging to their respective departments. No user must be able to access the database belonging to another department. What should James do to accomplish the task?
+A) James should create a Windows Authentication login for each domain group and configure the logins as database users for the appropriate database. Add each database user to the db_ddladmin database role.
+B) James should create a Windows Authentication login for each domain user and configure the logins as database users for the appropriate database. Add each database user to the db_ddladmin database role.
+C) James should create a Windows Authentication login for each domain group and configure the logins as database users for the appropriate database. Add each database user to the db_datareader and db_datawriter database roles.
+D) James should create a Windows Authentication login for each domain user and configure the logins as database users for the appropriate database. Add each database user to the db_datareader and db_datawriter database roles.
+Correct Answer: C) Option C (domain group / db_datareader and db_datawriter)
+
+184. What type of parameter must be specified when creating a stored procedure?
+A) output
+B) input
+C) number
+D) boolean
+Correct Answer: A) output
+
+185. You work as a Database Designer for Tritech Inc. You are designing a table named Info... The value of both the attributes should be unique and cannot be NULL. You design an artificial key EmpID in the Info table to serve as a primary key. Which of the following factors lead you to define an artificial key for use as a primary key in the Info table? Each correct answer represents a part of the solution. (Choose all that apply.)
+A) The natural key contains highly sensitive data
+B) The value of the primary key must be persistent.
+C) The value of the primary key cannot be NULL.
+D) The value of the primary key must be unique.
+Correct Answer: A, B, C, D (All options are correct)
+
+186. You have the following table definition: CREATE TABLE Road (RoadID INTEGER NOT NULL, Distance INTEGER NOT NULL). You execute the following statement: INSERT INTO Road VALUES (1234, 36). What is the result?
+A) an error stating that duplicate IDs are not allowed
+B) a syntax error
+C) an error stating that NULL values are not allowed
+D) a new row in the table
+Correct Answer: D) a new row in the table
+
+187. Which two elements are required to define a column? (Choose two.)
+A) A data type
+B) An index
+C) A name
+D) A key
+Correct Answer: A) A data type, C) A name
+
+188. Which command should you use to remove a table from a database?
+A) DROP TABLE
+B) REMOVE TABLE
+C) UPDATE TABLE
+D) DELETE TABLE
+Correct Answer: A) DROP TABLE
+
+189. Instructions: For each of the following statements, select Yes if the statement is true. Otherwise, select No.
+- A SQL Server Login can use Windows Authentication -> Yes
+- A SQL Server Role provides permissions at the server level. -> Yes
+- A SQL Server Login is granted permission to database views only. -> No
+
+190. This question requires that you evaluate the underlined text to determine if it is correct. You have two tables. Each table has three rows. [Nine rows] will be included in the Cartesian product of these two tables.
+A) Three
+B) No change is needed
+C) Six
+D) Zero
+Correct Answer: B) No change is needed
+
+191. Matching:
+- The use can perform [unlimited] actions on data that is on the server.
+- The use can perform [unlimited] actions on database objects that are on the server.
+
+192. Which of the following commands cannot be rolled back? Each correct answer represents a complete solution. (Choose two.)
+A) DELETE
+B) UPDATE
+C) TRUNCATE
+D) COMMIT
+Correct Answer: C) TRUNCATE, D) COMMIT
+
+193. You have a table that contains the following data (ProductID, ProductCategory)... Which database term is used to describe the relationship between ProductID and ProductCategory?
+A) Compositional
+B) Cohort
+C) Functionally dependent
+D) Relationally dependent
+E) Deterministic
+Correct Answer: A) Compositional
+
+194. Which statement will result in the creation of an index?
+A) CREATE TABLE Employee (EmployeeID INTEGER PRIMARY KEY)
+B) CREATE TABLE Employee (EmployeeID INTEGER DISTINCT)
+C) CREATE TABLE Employee (EmployeeID INTEGER NULL)
+D) CREATE TABLE Employee (EmployeeID INTEGER INDEX)
+Correct Answer: A) Option A (PRIMARY KEY)
+
+195. You need to store product names that vary from three to 30 characters. You also need to minimize the amount of storage space that is used. Which data type should you use?
+A) CHAR (3, 30)
+B) VARCHAR (3, 30)
+C) VARCHAR (30)
+D) CHAR (30)
+Correct Answer: C) VARCHAR (30)
+
+196. You have a Department table and an Employee table in your database. You need to ensure that an employee can be assigned to only an existing department. What should you apply to the Employee table?
+A) A data type
+B) A primary key
+C) A unique constraint
+D) A foreign key
+E) An index
+Correct Answer: D) A foreign key
+
+197. Which of the following enables a user to use generic methods to access a database and to focus on the coding rather than the syntax for a specific database API?
+A) Native auditing
+B) Database security
+C) Authentication
+D) Abstraction
+Correct Answer: D) Abstraction
+
+198. You need to remove a view named EmployeeView from your database. Which statement should you use?
+A) DROP Employeeview
+B) DELETE EmployeeView
+C) DROP VIEW EmployeeView
+D) DELETE VIEW EmployeeView
+Correct Answer: C) DROP VIEW EmployeeView
+
+199. You need to create a view to filter rows of data from an underling table. Which type of clause must be included in the CREATE VIEW statement?
+A) WHERE
+B) FILTER
+C) JOIN
+D) CONSTRAINT
+Correct Answer: A) WHERE
+
+200. You need to store the first name, last name, and student ID for 100 students. This information will be stored in a table as:
+A) three items and 100 cells.
+B) 100 rows and three columns.
+C) 100 items and three cells.
+D) three rows and 100 columns.
+Correct Answer: B) 100 rows and three columns.
